@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sample</title>
+    <style>
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 40px;
+        position: relative;
+        background-color: #66c;
+      }
+      div::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -15px;
+        border: 15px solid transparent;
+        border-top: 15px solid #66c;
+      }
+      span {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>にゃー</span>
+    </div>
+  </body>
+</html>

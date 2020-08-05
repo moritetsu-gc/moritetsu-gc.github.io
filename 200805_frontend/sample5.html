@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <title>sample</title>
+    <style>
+      p {
+          position: relative;
+      }
+
+      p::after {
+          content: '';
+          position: absolute;
+          top: calc(100% + 4px);
+          left: 0;
+          right: 0;
+          height: 2px;
+          background-color: #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>にゃー</p>
+    </div>
+  </body>
+</html>
