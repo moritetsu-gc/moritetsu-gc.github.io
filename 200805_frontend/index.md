@@ -243,6 +243,16 @@ p::after {
 * ::before/::afterではテキストがなくても「content」必須
 * HTMLはスッキリするが使いすぎると今度はCSSがカオスに
 
+>>>
+
+### その他(8/5に出た質問)
+* 疑似要素のblock/inlineはどうなる？
+  * デフォルトではinline
+* 疑似要素で使えないstyleはあるか？
+  * 明確に「これが出来てこれが出来ない」という資料は見つかっていない
+  * アニメーション(animation / transition)については一部ブラウザが非対応。
+* 参考：[MDN](https://developer.mozilla.org/ja/docs/Web/CSS/::before) (::before)
+
 ---
 
 ## まとめ
