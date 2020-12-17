@@ -309,7 +309,7 @@ https://codepen.io/t_morinaga/pen/EWXgbL
 
 * 親要素(flex container / grid container)と子要素(flex item / grid item)でコンポーネントを分ける場合
   + それぞれのコンポーネントでstyleを記載すると**密結合になる**
-  + 親要素でまとめてstyle記載する方が吉？
+  + 全部まとめて1コンポーネントにするか親要素でまとめてstyle記載するか？
 
 <div style="width:70%; margin:auto">
 
