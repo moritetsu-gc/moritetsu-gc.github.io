@@ -41,6 +41,9 @@ CSSの「？」部分に記載する内容を答えよ。
 
 ### 一番あかんやつ
 
+<div class="two-column">
+<div class="left">
+
 ```
 .inner {
     margin-top: 100px;
@@ -48,11 +51,22 @@ CSSの「？」部分に記載する内容を答えよ。
 }
 ```
 
-* 値を直接指定する → 汎用性ゼロ
+* 値を直接指定する<br>→ 汎用性ゼロ
+
+</div>
+<div class="right">
+
+![図](q_sample.png)
+
+</div>
+</div>
 
 ---
 
 ### 昔流行ったやつ
+
+<div class="two-column">
+<div class="left">
 
 ```
 .wrapper {
@@ -71,9 +85,20 @@ CSSの「？」部分に記載する内容を答えよ。
 * コードが長い
 * 他要素との兼ね合いで上手くいかないことも多い
 
+</div>
+<div class="right">
+
+![図](q_sample.png)
+
+</div>
+</div>
+
 ---
 
 ### 昔流行ったやつ(2)
+
+<div class="two-column">
+<div class="left">
 
 ```
 .wrapper {
@@ -90,9 +115,20 @@ CSSの「？」部分に記載する内容を答えよ。
 * 一応今でも使えなくはない
 * が、やはりコードが長い
 
+</div>
+<div class="right">
+
+![図](q_sample.png)
+
+</div>
+</div>
+
 ---
 
 ### 多分最近はこれが主流
+
+<div class="two-column">
+<div class="left">
 
 ```
 .wrapper {
@@ -105,9 +141,20 @@ CSSの「？」部分に記載する内容を答えよ。
 * 3行で可能
 * IEも10以降で対応
 
+</div>
+<div class="right">
+
+![図](q_sample.png)
+
+</div>
+</div>
+
 ---
 
 ### 今後流行るかも？
+
+<div class="two-column">
+<div class="left">
 
 ```
 .wrapper {
@@ -117,8 +164,16 @@ CSSの「？」部分に記載する内容を答えよ。
 ```
 
 * わずか2行！
-* ただしplace-itemsがIE/Edge/iOS(10まで)非対応
+* ただしplace-itemsがIE/旧Edge/iOS(10まで)で非対応
   + 上記の古いブラウザが完全に廃れたら主流になりそう
+
+</div>
+<div class="right">
+
+![図](q_sample.png)
+
+</div>
+</div>
 
 ---
 
@@ -126,10 +181,11 @@ CSSの「？」部分に記載する内容を答えよ。
 
 ---
 
+## 昔のレイアウト
+
 <div class="two-column">
 <div class="left">
 
-## 昔のレイアウト
 ### テーブルレイアウト
 
 * table/tr/td要素を駆使してレイアウト
@@ -145,14 +201,18 @@ CSSの「？」部分に記載する内容を答えよ。
 
 ---
 
+## 昔のレイアウト
+
 <div class="two-column">
 <div class="left">
 
-## 昔のレイアウト
 ### floatレイアウト
 
 * floatで左側、右側のレイアウトを設定
-* これもfloat本来の目的から逸れるため使われなくなった
+* これも使われなくなった
+  + 位置、幅、高さの設定が面倒
+  + float本来の目的から逸れる
+
 </div>
 <div class="right">
 
@@ -188,7 +248,7 @@ CSSの「？」部分に記載する内容を答えよ。
 
 ---
 
-#### できること
+#### Flexboxでできること
 
 * 親要素のサイズが変化した時の子要素の配置
 * 子要素の高さが違う時の上揃え/中央揃え/下揃え
@@ -199,12 +259,23 @@ CSSの「？」部分に記載する内容を答えよ。
 
 ---
 
-#### Flexbox サンプル
+#### Flexbox サンプル(1)
+
+グロナビ
 
 https://codepen.io/t_morinaga/pen/YNExyz
-https://codepen.io/t_morinaga/pen/WRXExE
-https://codepen.io/t_morinaga/pen/rjYzMq
+
+![flex_sample1](flex_sample1.png)
+
+---
+
+#### Flexbox サンプル(2)
+
+2カラム
+
 https://codepen.io/t_morinaga/pen/bgYroo
+
+![flex_sample2](flex_sample2.png)
 
 ---
 
@@ -220,13 +291,40 @@ https://codepen.io/t_morinaga/pen/bgYroo
 
 * 2次元の格子(grid)内の縦、横位置を指定して子要素を配置
 
-**従来だと縦横配置のため入れ子が複雑になりがちだったHTMLがめっちゃシンプルに♪**
+**従来だと縦横配置のため入れ子が複雑になりがちだった<br>HTMLがめっちゃシンプルに♪**
 
 ---
 
 #### CSS Grid Layout サンプル
 
+実際の配置サンプル
+
 https://codepen.io/t_morinaga/pen/EWXgbL
+
+![grid_layout](grid_layout.png)
+
+---
+
+### 使用上の注意(1)
+
+* 親要素(flex container / grid container)と子要素(flex item / grid item)でコンポーネントを分ける場合
+  + それぞれのコンポーネントでstyleを記載すると**密結合になる**
+  + 親要素でまとめてstyle記載する方が吉？
+
+<div style="width:70%; margin:auto">
+
+![notice1](notice1.png)
+
+</div>
+
+---
+
+### 使用上の注意(2)
+
+* CSS Grid LayoutはIE/旧Edgeでは**記述方法が異なる**(また一部機能非対応)
+  + Autoprefixerを使うなどして変換して記載
+
+![notice2](notice2.png)
 
 ---
 
