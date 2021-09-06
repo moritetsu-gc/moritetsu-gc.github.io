@@ -12,7 +12,7 @@
 3. HTML/CSS/JavaScript
 4. 何ができるのか？
 5. ツールを使ってみよう
-6. 最後に
+6. まとめ
 
 ---
 
@@ -303,11 +303,20 @@ console.log('Hello, world!');
 
 ---
 
+<div class="two-column">
+<div class="left">
+
 * SPAIA
     * アプリ中の表示部分もHTML
         * Web版と同内容をアプリ用にカスタマイズ
 
-【図(スクリーンショット)を挿入予定】
+</div>
+<div class="right">
+
+![SPAIA](./images/spaia_app.png)
+
+</div>
+</div>
 
 ---
 
@@ -318,7 +327,12 @@ console.log('Hello, world!');
 
 ---
 
-## 6. 最後に
+## 6. まとめ
+
+---
+
+### まとめ
+
 * HTML/CSS/JavaScriptの技術に関心を持ちましょう
 * devツールを活用し、タグの仕組み、HTML/CSS/JavaScriptの動きに着目しましょう
 * 今日得た知識を今後の業務に活かしましょう
