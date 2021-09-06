@@ -1,4 +1,6 @@
-# Web開発/制作以外の人のためのフロントエンド講座
+フロントエンド社内勉強会
+
+# Web開発/制作以外の人のための<br>フロントエンド講座
 
 2021.9.9. T.Morinaga
 
@@ -15,13 +17,16 @@
 ---
 
 ## 1. はじめに
+
+---
+
 ### 1.1 目的
 * リスティング広告について表示される仕組みや周辺技術を学びましょう
 * 広告、LPのみならずWebサイト全般を支える技術であるHTML/CSS/JavaScriptを学びましょう
 
 ---
 
-### 1.2 実務では
+### 1.2 実務への活かし方
 * ブラウザを開いてサイトを見る
     * 広告、タグを入れるなどした時にどうやって確認すればいいでしょうか？
 * ブラウザ(Chrome)用のdevツールの使い方も紹介しつつ進めていきます
@@ -33,14 +38,18 @@
 #### 今日やること
 * 各技術の概要(フロントエンド/HTML/CSS/JavaScript)
 * 技術を使った実例
-* ツール(Google Chrome用Developerツール)の使い方
+  * ツール(Google Chrome用Developerツール)の使い方
 
 #### やらないこと
 * コード(HTML/CSS/JavaScript)の書き方、プログラミング
+* 最近のフロントエンド界隈のトピック(ブラウザなど)
 
 ---
 
-## 2. インターネットとフロントエンドとバックエンド
+## 2. インターネットと<br>フロントエンドと<br>バックエンド
+
+---
+
 ### 2.1 インターネット
 ![インターネット](./images/Client_Server.png)
 
@@ -96,17 +105,27 @@
 
 #### 余談
 * 「フロント」と言うと……
-    * MS事業部→窓口担当
-    * プロダクト開発部→フロントエンド担当
+    * MS事業部 → 窓口担当
+    * プロダクト開発部 → フロントエンド担当
 * 混同しないように注意
 
 ---
 
 ## 3. HTML/CSS/JavaScript
+
+---
+
 ### 3.1 HTMLとは
+
+<div class="two-column">
+<div class="left">
+
 * HyperText Markup Language
-    * HyperText：多数のテキスト文書を相互に関連付け、結び付ける仕組み→要するにリンク
-    * Markup：文書構造や視覚表現を意味づけしていく→要するにタグ
+    * HyperText：多数のテキスト文書を相互に関連付け、結び付ける仕組み<br>→ 要するにリンク
+    * Markup：文書構造や視覚表現を意味づけしていく<br>→ 要するにタグ
+
+</div>
+<div class="right">
 
 #### サンプル
 ```
@@ -120,22 +139,32 @@
 &lt;/html&gt;
 ```
 
+</div>
+</div>
+
 ---
 
 #### 歴史
 * 1989年：CERN(欧州原子核研究機構)のティム・バーナーズ＝リーが考案・開発
     * 当初は「どのように情報や進行中の研究を共有するか」を目的に開発された
-* 1993年：IETF(インターネット技術特別調査委員会)により仕様書発表→HTML1.0
+* 1993年：IETF(インターネット技術特別調査委員会)により仕様書発表 → HTML1.0
 * 1999年：HTML4.01(W3C)
 * 2014年：HTML5(W3C)
-* 2019年：HTML Living Standard(WHATWG)を正式なHTMLとすることでW3CとWHATWGが合意 → 現在に至る
+* 2019年：<strong>HTML Living Standard</strong>(WHATWG)を正式なHTMLとすることでW3CとWHATWGが合意 → 現在に至る
 
 ---
 
 ### 3.2 CSS
+
+<div class="two-column">
+<div class="left">
+
 * Cascading Style Sheets
-    * Cascading → 上流で定義した内容を引き継ぐ
+    * Cascading<br>→ 上流で定義した内容を引き継ぐ
 * Webサイトの色、装飾
+
+</div>
+<div class="right">
 
 #### サンプル
 ```
@@ -145,25 +174,38 @@ span {
 }
 ```
 
+</div>
+</div>
+
 ---
 
 #### 歴史
 * 1996年：Cascading Style Sheets, level 1 をW3Cが勧告
 * 1998年：CSS2
 * 2011年：CSS2.1
-* 2012年以降：各モジュールごとに新たな仕様を勧告(いわゆるCSS3)
+* 2012年以降：各モジュールごとに新たな仕様を勧告<br>(いわゆるCSS3)
 
 ---
 
 ### 3.3 JavaScript
+
+<div class="two-column">
+<div class="left">
+
 * プログラミング言語の一つ
 * Webサイトでの動作、データ収集、ユーザー操作に対する処理などを行う
-* 最近ではサーバー側の用途でも使われるように → Node.js
+* 最近ではサーバー側の用途でも使われるように<br>→ Node.js
+
+</div>
+<div class="right">
 
 #### サンプル
 ```
 console.log('Hello, world!');
 ```
+
+</div>
+</div>
 
 ---
 
@@ -172,18 +214,21 @@ console.log('Hello, world!');
     * 最初は「LiveScript」という名称であったが、業務提携していたサン・マイクロシステムズが開発していた「Java」にあやかって「JavaScript」という名称に
 * 1996年：Internet Explorer3.0に搭載されて一気に広まる
 * 1997年：EcmaインターナショナルによってECMAScriptとして標準仕様化
-* 2015年：ECMAScript2015(バージョン6に相当するがここから毎年アップデート。バージョン番号ではなく年号が付加)
+* 2015年：<strong>ECMAScript2015</strong>(バージョン6に相当するがここから毎年アップデート。バージョン番号ではなく年号が付加)
 
 ---
 
 #### 余談
-* 「Java」と「JavaScript」は名称こそ似ているが全然違う言語です！
+* 「Java」と「JavaScript」は名称こそ似ていますが<br><strong>全然違う言語です！</strong>
 
 ![JavaとJavaScript](./images/Java_JavaScript.png)
 
 ---
 
 ## 4. 何ができるのか？
+
+---
+
 ### 4.1 それぞれの役割
 例えると
 * HTML：骨組み
@@ -193,6 +238,9 @@ console.log('Hello, world!');
 ---
 
 ## 5. ツールを使ってみよう
+
+---
+
 ### Google Chrome
 #### Developerツール
 
@@ -263,9 +311,8 @@ console.log('Hello, world!');
 
 ---
 
-* このスライド
-    * 実はHTML/CSS/JavaScriptでスライドも作れます！
-        * [reveal.js](https://revealjs.com/)
+* 実はこのスライドもHTML/CSS/JavaScriptで作成しています！
+    * [reveal.js](https://revealjs.com/)
 
 ![reveal](./images/reveal.png)
 
