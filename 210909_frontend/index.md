@@ -16,14 +16,14 @@
 
 ## 1. はじめに
 ### 1.1 目的
-* リスティング広告について表示される仕組みや周辺技術を理解せずに運用していませんか？
+* リスティング広告について表示される仕組みや周辺技術を学びましょう
 * 広告、LPのみならずWebサイト全般を支える技術であるHTML/CSS/JavaScriptを学びましょう
 
 ---
 
 ### 1.2 実務では
-* ブラウザを開いてサイトを見てそれで終わりでしょうか？
-    * 広告、タグを入れるなどした時にどうやって確認しますか？
+* ブラウザを開いてサイトを見る
+    * 広告、タグを入れるなどした時にどうやって確認すればいいでしょうか？
 * ブラウザ(Chrome)用のdevツールの使い方も紹介しつつ進めていきます
     * 背景技術を理解して使っていくようにしましょう
 
@@ -74,12 +74,23 @@
 ---
 
 #### 実際のブラウザで確認してみよう
-* command + option + u → ページのソース
+* ページのソースを表示
+    * Mac：command + option + U
+    * Windows：Ctrl + U
     * サーバー側(バックエンド)で生成されたコードを表示する
-* command + option + i → 開発ツール
+
+![ページのソースを表示](./images/page_source.png)
+
+---
+
+* 開発ツール
+    * Mac：command + option + I
+    * Windows：Ctrl + Shift + I
     * ブラウザ側(フロントエンド)で受け取り構成されるHTML/CSS/JS
-    * ユーザーの操作によって内容が変化する
-    * 編集も可能
+    * ユーザーの操作によって内容が変化する(操作時の状態に寄ってコードが変化する)、編集も可能
+    * 詳しい説明は後ほど行います
+
+![開発ツール](./images/dev_tool_01.png)
 
 ---
 
@@ -184,6 +195,7 @@ console.log('Hello, world!');
 ## 5. ツールを使ってみよう
 ### Google Chrome
 #### Developerツール
+
 * 起動方法
     * キーボード
       * Windows：Ctrl+Shift+i
@@ -191,26 +203,28 @@ console.log('Hello, world!');
       * 共通：F12
     * 調べたい要素のところで右クリック→「検証」
 
-【図(スクリーンショット)を挿入予定】
+![メニューから「検証」](./images/dev_tool_menu.png)
 
 ---
 
 #### 実例
+
 * サイト紹介
     * GCトップページ
         * https://www.glad-cube.com/
         * この中でHTML/CSS/JavaScriptがどういった役割を果たしているか
 
-【図(スクリーンショット)を挿入予定】
+![GCトップページ](./images/glad-cube.png)
 
 ---
 
 #### Developerツールで使える機能
+
 * Elements
     * 現在開いているページ内で調べたい箇所のHTML/CSS内容を確認できる
     * 編集することも可能(ただしリロードすると元に戻る)
 
-【図(スクリーンショット)を挿入予定】
+![Elements](./images/dev_tool_01.png)
 
 ---
 
@@ -219,7 +233,7 @@ console.log('Hello, world!');
     * コード内にログ出力のJavaScriptコードを仕込むことにより状態などを出力可能
     * ここでJavaScriptを入力して実行することも可能
 
-【図(スクリーンショット)を挿入予定】
+![Console](./images/dev_tool_02.png)
 
 ---
 
@@ -229,7 +243,7 @@ console.log('Hello, world!');
     * 通信回数、ステータス
     * ファイルの種類ごとに確認することも可能
 
-【図(スクリーンショット)を挿入予定】
+![Network](./images/dev_tool_03.png)
 
 ---
 
@@ -237,7 +251,7 @@ console.log('Hello, world!');
     * スマートフォンでの表示内容をシミュレーション
     * 完璧に再現はできないが参考にはなる
 
-【図(スクリーンショット)を挿入予定】
+![SP(レスポンシブ)](./images/dev_tool_04.png)
 
 ---
 
@@ -253,7 +267,7 @@ console.log('Hello, world!');
     * 実はHTML/CSS/JavaScriptでスライドも作れます！
         * [reveal.js](https://revealjs.com/)
 
-【図(スクリーンショット)を挿入予定】
+![reveal](./images/reveal.png)
 
 ---
 
