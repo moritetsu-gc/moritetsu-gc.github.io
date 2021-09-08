@@ -21,7 +21,7 @@
 ---
 
 ### 1.1 目的
-* リスティング広告について表示される仕組みや周辺技術を学びましょう
+* インターネット広告などについて表示される仕組みや周辺技術を学びましょう
 * 広告、LPのみならずWebサイト全般を支える技術であるHTML/CSS/JavaScriptを学びましょう
 
 ---
@@ -51,8 +51,8 @@
 ### 2.1 インターネット
 ![インターネット](./images/Client_Server.png)
 
-* クライアント側が操作することでサーバー側への要求が出される
-* ネットワークを通してクライアントからサーバーへ要求が送信される
+* クライアント側(端末)を操作することでサーバー側への要求が出される
+* ネットワークを通してクライアント側からサーバー側へ要求が送信される
 * サーバー側で要求を処理してクライアント側へ返答する
 
 ---
@@ -110,6 +110,9 @@
 
 #### 余談
 
+* 「クライアント」と言うと……
+    * MS事業部 → 顧客
+    * プロダクト開発部 → ユーザーが操作する端末
 * 「フロント」と言うと……
     * MS事業部 → 窓口担当
     * プロダクト開発部 → フロントエンド担当
@@ -141,11 +144,14 @@
 &lt;/head&gt;
 &lt;body&gt;
     &lt;p&gt;Hello world!&lt;/p&gt;
+    &lt;a href="https://glad-cube.com"&gt;Glad cube&lt;/a&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 ```
 
-ブラウザに「Hello world!」が表示される
+<small>ブラウザに「Hello world!」とグラッドキューブトップページへのリンクが表示される</small>
+
+<small><a href="sample1.html">動作結果サンプル</a><small>
 
 </div>
 </div>
@@ -169,20 +175,22 @@
 
 * Cascading Style Sheets
     * Cascading<br>→ 上流で定義した内容を引き継ぐ
-* Webサイトの色、装飾
+* Webサイトの色、装飾、レイアウトなど
 
 </div>
 <div class="right">
 
 #### サンプル
 ```
-span {
-  font-size: 24px;
-  color: red;
+p {
+    font-size: 24px;
+    color: red;
 }
 ```
 
-spanタグ内の文字がサイズ24pxで赤色になる
+<small>pタグ内の文字がサイズ24pxで赤色になる</small>
+
+<small><a href="sample2.html">動作結果サンプル</a><small>
 
 </div>
 </div>
@@ -203,6 +211,7 @@ spanタグ内の文字がサイズ24pxで赤色になる
 <div class="left">
 
 * プログラミング言語の一つ
+    * ブラウザ上で動作する唯一の言語
 * Webサイトでの動作、データ収集、ユーザー操作に対する処理などを行う
 * 最近ではサーバー側の用途でも使われるように<br>→ Node.js
 
@@ -214,7 +223,9 @@ spanタグ内の文字がサイズ24pxで赤色になる
 console.log('Hello, world!');
 ```
 
-コンソール(後ほど説明します)に「Hello, world!」が表示される
+<small>コンソール(後ほど説明します)に「Hello, world!」が表示される</small>
+
+<small><a href="sample3.html">動作結果サンプル</a><small>
 
 </div>
 </div>
@@ -244,7 +255,7 @@ console.log('Hello, world!');
 ### 4.1 それぞれの役割
 
 * HTML：文書の表示、他文書へのリンク
-* CSS：テキストのレイアウト、装飾
+* CSS：テキストの色、装飾、レイアウト
 * JavaScript：表示時およびユーザー操作時のページ内動作
 
 ---
@@ -277,10 +288,9 @@ console.log('Hello, world!');
 
 #### 実例
 
-* サイト紹介
-    * GCトップページ
-        * https://www.glad-cube.com/
-        * この中でHTML/CSS/JavaScriptがどういった役割を果たしているか
+* GCトップページ
+    * https://www.glad-cube.com/
+    * この中でHTML/CSS/JavaScriptがどういった役割を果たしているか
 
 ![GCトップページ](./images/glad-cube.png)
 
@@ -291,6 +301,7 @@ console.log('Hello, world!');
 * Elements
     * 現在開いているページ内で調べたい箇所のHTML/CSS内容を確認できる
     * 編集することも可能(ただしリロードすると元に戻る)
+    * HTML内の検索も可能(command + f / Ctrl + f)
 
 ![Elements](./images/dev_tool_01.png)
 
@@ -310,6 +321,8 @@ console.log('Hello, world!');
     * ページの表示までにどのようなファイルをロードしているか？
     * 通信回数、ステータス
     * ファイルの種類ごとに確認することも可能
+    * 「Disable cache」にチェックを入れてリロードするとキャッシュ無効
+    * 「No throttling」の箇所を変更することで通信速度シミュレーション可能
 
 ![Network](./images/dev_tool_03.png)
 
@@ -318,6 +331,7 @@ console.log('Hello, world!');
 * SP(レスポンシブ)
     * スマートフォンでの表示内容をシミュレーション
     * 完璧に再現はできないが参考にはなる
+    * PC / SPで違う表示となる場合の確認に便利
 
 ![SP(レスポンシブ)](./images/dev_tool_04.png)
 
@@ -332,6 +346,8 @@ console.log('Hello, world!');
 
 * アプリ中の表示部分もHTML
     * Web版と同内容をアプリ用にカスタマイズ
+    * 画面上部のタイトル表示部分、下部の操作部分はアプリ用の言語で実装
+      * React Native / Swift / Kotlin
 
 </div>
 <div class="right">

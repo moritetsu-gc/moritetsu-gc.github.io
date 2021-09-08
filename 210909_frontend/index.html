@@ -57,6 +57,7 @@
 		.reveal img {
 			background-color: white;
 			max-height: 320px;
+			margin-bottom: 0;
 		}
 		.two-column {
 			display: flex;
@@ -76,12 +77,15 @@
 		#やらないこと, #サンプル {
 			margin-top: 32px;
 		}
+		#実例 + ul + p img {
+			border: solid 1px #999
+		}
 		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section data-markdown="./index.md" data-separator="^\n---\n$" data-separator-vertical="^\n>>>\n$"></section>
+				<section data-markdown="./index.md?v=20210908" data-separator="^\n---\n$" data-separator-vertical="^\n>>>\n$"></section>
 			</div>
 		</div>
 
