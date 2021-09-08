@@ -15,10 +15,6 @@
 
 		<!-- style override -->
 		<style>
-		.slides {
-			width: 80vw !important;
-			height: 45vw !important;
-		}
 		.reveal {
 			font-size: 36px;
 		}
@@ -40,10 +36,13 @@
 			font-size: 1.2em;
 		}
 		.reveal ul {
-			max-width: 80%;
+			max-width: 85%;
 		}
 		.reveal li li {
-			font-size: 90%;
+			font-size: 80%;
+		}
+		.reveal ul ul {
+			max-width: none;
 		}
 		.reveal pre code {
 			max-height: none;
@@ -72,7 +71,7 @@
 		}
 		.two-column img, .two-column ul{
 			max-width: 100%;
-			max-height: 100%;
+			max-height: 540px;
 		}
 		#やらないこと, #サンプル {
 			margin-top: 32px;
@@ -96,10 +95,12 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				transitionSpeed: 'fast',
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
+			Reveal.configure({ width: 1280, height: 720 });
 		</script>
 	</body>
 </html>
