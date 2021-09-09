@@ -1,8 +1,8 @@
-フロントエンド社内勉強会
+グラッドキューブ社内勉強会
 
 # Web開発/制作以外の人のための<br>フロントエンド講座
 
-2021.9.9. T.Morinaga
+2021.9.9. T.Morinaga / プロダクト開発部
 
 ---
 
@@ -75,12 +75,16 @@
 * Webではブラウザで表示、操作する部分
 * 主にHTML、CSS、JavaScriptで構成される
 
+![フロントエンド](./images/frontend.png)
+
 ---
 
 #### バックエンド → 「使える仕様に合うようにそれを加工する」
 
 * クライアント側からの要求に応じてサーバー側で処理を行いクライアント側に返す
 * Node.js、PHP、Pythonなど
+
+![バックエンド](./images/backend.png)
 
 ---
 
@@ -258,13 +262,17 @@ console.log('Hello, world!');
 * CSS：テキストの色、装飾、レイアウト
 * JavaScript：表示時およびユーザー操作時のページ内動作
 
+![HTML/CSS/JavaScript](./images/html_css_js.png)
+
 ---
 
-#### 例えると
+#### 家に例えると
 
 * HTML：骨組み
 * CSS：内装/外装/装飾
 * JavaScript：電気、ガスなどで動くもの
+
+![家に例えると](./images/house_structure.png)
 
 ---
 
@@ -377,3 +385,7 @@ console.log('Hello, world!');
 * HTML/CSS/JavaScript の技術に関心を持ちましょう
 * devツールを活用し、タグの仕組み、HTML/CSS/JavaScript の動きに着目しましょう
 * 今日得た知識を今後の業務に活かしましょう
+
+---
+
+<b>ご清聴ありがとうございました。</b>
