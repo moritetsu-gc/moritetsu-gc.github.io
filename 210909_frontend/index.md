@@ -91,8 +91,8 @@
 #### 実際のブラウザで確認してみよう
 
 * ページのソースを表示
-    * Mac：command + option + U
-    * Windows：Ctrl + U
+    * Windows：Ctrl + u
+    * Mac：command + option + u
     * サーバー側(バックエンド)で生成されたコードを表示する
 
 ![ページのソースを表示](./images/page_source.png)
@@ -102,10 +102,10 @@
 #### 実際のブラウザで確認してみよう
 
 * 開発ツール
-    * Mac：command + option + I
-    * Windows：Ctrl + Shift + I
-    * ブラウザ側(フロントエンド)で受け取り構成されるHTML/CSS/JS
-    * ユーザーの操作によって内容が変化する(操作時の状態に寄ってコードが変化する)、編集も可能
+    * Windows：Ctrl + Shift + i
+    * Mac：command + option + i
+    * ブラウザ側(フロントエンド)で受け取り構成されるHTML/CSS/JavaScript
+    * ユーザーの操作によって内容が変化する(操作時の状態によってコードが変化する)、編集も可能
     * 詳しい説明は後ほど行います
 
 ![開発ツール](./images/dev_tool_01.png)
@@ -331,6 +331,7 @@ console.log('Hello, world!');
     * ファイルの種類ごとに確認することも可能
     * 「Disable cache」にチェックを入れてリロードするとキャッシュ無効
     * 「No throttling」の箇所を変更することで通信速度シミュレーション可能
+    * 「Preserve Log」でリロード/リダイレクト後も記録を残すことが可能
 
 ![Network](./images/dev_tool_03.png)
 
@@ -355,7 +356,8 @@ console.log('Hello, world!');
 * アプリ中の表示部分もHTML
     * Web版と同内容をアプリ用にカスタマイズ
     * 画面上部のタイトル表示部分、下部の操作部分はアプリ用の言語で実装
-      * React Native / Swift / Kotlin
+      * React Native
+      * SPAIA AI競馬はSwift/Kotlin
 
 </div>
 <div class="right">
