@@ -23,12 +23,12 @@
 </div>
 <div class="right narrow">
 
-<img src="img/img_morinaga.jpg" alt="もりてつ" style="display: block;width: 200px; margin: 20px auto">
-<img src="img/gc_logo.svg" alt="株式会社グラッドキューブ" style="display: block;width: 75%; margin: 20px auto">
-<img src="img/spaia_logo.svg" alt="SPAIA" style="display: block;width: 75%; margin: 20px auto">
-<img src="img/keiba_logo.svg" alt="SPAIA競馬" style="display: block;width: 75%; margin: 20px auto">
-<img src="img/sitest_logo.svg" alt="SiTest" style="display: block;width: 75%; margin: 20px auto">
-<img src="img/fastest_logo.png" alt="FasTest" style="display: block;width: 75%; margin: 20px auto">
+<img src="img/img_morinaga.jpg" alt="もりてつ" style="display: block;width: 200px; margin: 16px auto">
+<img src="img/gc_logo.svg" alt="株式会社グラッドキューブ" style="display: block;width: 75%; margin: 16px auto">
+<img src="img/spaia_logo.svg" alt="SPAIA" style="display: block;width: 60%; margin: 16px auto">
+<img src="img/keiba_logo.svg" alt="SPAIA競馬" style="display: block;width: 60%; margin: 16px auto">
+<img src="img/sitest_logo.svg" alt="SiTest" style="display: block;width: 60%; margin: 16px auto">
+<img src="img/fastest_logo.png" alt="FasTest" style="display: block;width: 60%; margin: 16px auto">
 
 </div>
 </div>
