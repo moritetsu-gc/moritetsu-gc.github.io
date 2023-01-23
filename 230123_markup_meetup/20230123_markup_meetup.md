@@ -28,6 +28,7 @@
 <img src="img/spaia_logo.svg" alt="SPAIA" style="display: block;width: 75%; margin: 20px auto">
 <img src="img/keiba_logo.svg" alt="SPAIA競馬" style="display: block;width: 75%; margin: 20px auto">
 <img src="img/sitest_logo.svg" alt="SiTest" style="display: block;width: 75%; margin: 20px auto">
+<img src="img/fastest_logo.svg" alt="FasTest" style="display: block;width: 75%; margin: 20px auto">
 
 </div>
 </div>
