@@ -306,6 +306,17 @@ img {
 
 ---
 
+## ランキング一覧
+
+* 第1位：place-items
+* 第2位：min() / max() / clamp()
+* 第3位：min-content / max-content / fit-content
+* 第4位：object-fit
+* 第5位：gap (for Flexbox)
+* 番外：-webkit-line-clamp
+
+---
+
 ## まとめ
 * IE11対応のために断念せざるをえなかったCSSが多数使えるようになりました
 * 役に立ちそうなものは積極的に使っていき工数削減に役立てていきましょう
