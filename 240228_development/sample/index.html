@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/htmx.org@1.9.10/dist/htmx.js"></script>
+    <title>htmx sample</title>
+  </head>
+  <body>
+    <h2>GET SAMPLE</h2>
+    <button hx-get="./sample.txt" hx-target="#test" hx-trigger="click">Click</button>
+    <p id="test">test</p>
+  </body>
+</html>
